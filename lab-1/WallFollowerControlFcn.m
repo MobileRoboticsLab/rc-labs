@@ -1,4 +1,4 @@
-function Lab1ControlFcn(RC)
+function WallFollowerControlFcn(RC)
 % Goal: Keep the RC a fixed distance (desiredDistance) from the wall by
 % implementing a PD controller
 

@@ -9,10 +9,11 @@ CLEAR
 %%
 
 RC = RCCar();
-control = RCControl(RC, @Lab1ControlFcn, 10);
+control = RCControl(RC, @WallFollowerControlFcn, 10);
 display = RCDisplay(RC, 1, 2, ...
-    @(rc, disp, plt) displayDataLog(rc, disp, plt, 1, 2), ...
-    @(rc, disp, plt) displayDataLog(rc, disp, plt, 1, 3));
+    {@(rc, disp, plt) displayDataLog(rc, disp, plt, 1, 2), ...
+    @(rc, disp, plt) displayDataLog(rc, disp, plt, 1, 3)}, ...
+    {});
 
 pause(3.0);
 
