@@ -18,33 +18,28 @@ persistent lastTime
 
 
 % Hint: Use datetime('now') to get the current time.
-currentTime = datetime('now'); % DO NOT RENAME
-
+currentTime = datetime('now');
 
 % Hint: Use seconds(deltaTime) to convert from time to double
+deltaTime = ; % (DO NOT RENAME)
 
 
 % Hint: Use 'distance = getDistanceToRightWall(RC)' or
 % 'distance = getDistanceToLeftWall(RC)' to get the distances to the wall
 % on either side of the vehicle (in meters)
 
+distanceError = ; % (DO NOT RENAME)
 
-distanceError = ; % UPDATE THIS VARIABLE (DO NOT RENAME)
+% Hint: You can use 'isempty(var)' to check if a variable is initialized or not
 
-
-% Hint: What should the function do the first time its called, when your
-% persistent variables haven't been set yet?
-% You can use 'isempty(var)' to check if a variable is initialized or not
-
-
-steeringAngle = ; % UPDATE THIS VARIABLE (DO NOT RENAME)
+steeringAngle = ; % (DO NOT RENAME)
 
 
 % Set the steering angle for the remote controlled vehicle
 setSteeringAngle(RC, steeringAngle);
 
 % Set a constant speed for the remote controlled vehicle
-setSpeed(RC, 0.5); % constant speed
+setSpeed(RC, 0.5); % constant speed (DO NOT CHANGE)
 
 % Hint: Make sure to update your persistent variables
 

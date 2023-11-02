@@ -1,8 +1,6 @@
 %% LAB 1
 % Maintain a fixed distance from the wall by implementing a PD controller
 
-addpath(genpath("../../lib"))
-
 clc
 CLEAR
 
