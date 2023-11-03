@@ -21,3 +21,15 @@ control.start();
 pause(10.0);
 
 control.stop();
+display.close();
+
+figure()
+subplot(1, 2, 1)
+plot(RC.DataLog1, RC.DataLog2)
+xlabel("Time (s)")
+ylabel("Distance Error (m)")
+subplot(1, 2, 2)
+plot(RC.DataLog1, RC.DataLog3)
+xlabel("Time (s)")
+ylabel("Steering Angle (rad)")
+sgtitle("RC Lab 1 Results")
