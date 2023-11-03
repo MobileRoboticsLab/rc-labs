@@ -1,4 +1,0 @@
-function PurePursuitControlFcn(RC)
-
-
-end

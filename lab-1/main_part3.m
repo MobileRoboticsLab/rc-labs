@@ -7,13 +7,15 @@ CLEAR
 %%
 
 RC = RCCar();
-control = RCControl(RC, @PurePursuitControlFcn, 10);
 
-pause(3.0);
+resetMap(RC) % Resets localization to (x: 0, y: 0, phi: 0)
 
-control.start();
+% Create a loop that controls the car at some fixed rate
+% Run until you reach your waypoint
 
-num_seconds = 10;
-pause(num_seconds);
+% RC.X
+% RC.Y
+% RC.Phi
 
-control.stop();
+% RC.setSpeed(0.25)
+% RC.setSteeringAngle(gamma)
