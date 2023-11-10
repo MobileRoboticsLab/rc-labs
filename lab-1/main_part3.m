@@ -2,10 +2,13 @@
 % Implement Pure Pursuit
 
 clc
-CLEAR
+clear
+close all
 
+ConnectToROS % Connect to ROS network
 %%
 
+% Connect to RC
 RC = RCCar();
 
 resetMap(RC) % Resets localization to (x: 0, y: 0, phi: 0)
@@ -13,9 +16,12 @@ resetMap(RC) % Resets localization to (x: 0, y: 0, phi: 0)
 % Create a loop that controls the car at some fixed rate
 % Run until you reach your waypoint
 
-% RC.X
-% RC.Y
-% RC.Phi
+% x = RC.X
+% y = RC.Y
+% phi = RC.Phi
 
 % RC.setSpeed(0.25)
 % RC.setSteeringAngle(gamma)
+
+
+DisconnectFromROS % Disconnect from ROS network

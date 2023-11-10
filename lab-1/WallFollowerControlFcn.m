@@ -1,8 +1,6 @@
-function WallFollowerControlFcn(RC)
+function steeringAngle = WallFollowerControlFcn(RC, desiredDistance)
 % Goal: Keep the RC a fixed distance (desiredDistance) from the wall by
 % implementing a PD controller
-
-desiredDistance = 0.5; % m
 
 %% CODE IN THIS SECTION
 
@@ -16,6 +14,7 @@ KD = 0; % UPDATE THIS
 % They can be used to keep track of changes over time.
 persistent lastTime
 
+% Hint: You can use 'isempty(var)' to check if a variable is initialized or not
 
 % Hint: Use datetime('now') to get the current time.
 currentTime = datetime('now');
@@ -30,19 +29,9 @@ deltaTime = ; % (DO NOT RENAME)
 
 distanceError = ; % (DO NOT RENAME)
 
-% Hint: You can use 'isempty(var)' to check if a variable is initialized or not
-
 steeringAngle = ; % (DO NOT RENAME)
 
-
-% Set the steering angle for the remote controlled vehicle
-setSteeringAngle(RC, steeringAngle);
-
-% Set a constant speed for the remote controlled vehicle
-setSpeed(RC, 0.5); % constant speed (DO NOT CHANGE)
-
 % Hint: Make sure to update your persistent variables
-
 
 %% DO NOT EDIT BELOW
 
