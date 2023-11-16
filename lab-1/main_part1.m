@@ -5,7 +5,6 @@ clc
 clear
 close all
 
-ConnectToROS % Connect to ROS network
 %%
 
 % Connect to RC
@@ -47,5 +46,3 @@ xlabel("Time (s)")
 ylabel("Steering Angle (rad)")
 
 sgtitle("RC Lab 1 Results")
-
-DisconnectFromROS % Disconnect from ROS network

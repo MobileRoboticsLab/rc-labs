@@ -5,7 +5,6 @@ clc
 clear
 close all
 
-ConnectToROS % Connect to ROS network
 %%
 
 % Connect to RC
@@ -30,6 +29,4 @@ while (toc < T)
 end
 
 % omega = v / r
-
-DisconnectFromROS % Disconnect from ROS network
 

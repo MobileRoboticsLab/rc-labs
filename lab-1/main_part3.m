@@ -5,7 +5,6 @@ clc
 clear
 close all
 
-ConnectToROS % Connect to ROS network
 %%
 
 % Connect to RC
@@ -22,6 +21,3 @@ resetMap(RC) % Resets localization to (x: 0, y: 0, phi: 0)
 
 % RC.setSpeed(0.25)
 % RC.setSteeringAngle(gamma)
-
-
-DisconnectFromROS % Disconnect from ROS network
