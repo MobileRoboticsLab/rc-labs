@@ -4,15 +4,12 @@
 clc
 clear
 close all
-
 %%
 
 % Connect to RC
 RC = RCCar();
 
 % Params
-KP = 0.5; % UPDATE THIS
-KD = 0.5; % UPDATE THIS
 desiredDistance = 0.5; % m
 duration = 10.0; % s
 frequency = 20.0; % Hz
@@ -28,6 +25,7 @@ steeringAngle_History = nan(1, totalTimeSteps);
 lastDistanceError = 0;
 startTime = datetime("now");
 lastTime = startTime;
+pause(0.25)
 
 % Control loop
 for k = 1:totalTimeSteps
@@ -43,10 +41,14 @@ for k = 1:totalTimeSteps
 
     %% FIX THIS SECTION
 
+    KP = 0.5; % UPDATE THIS
+    KD = 0.5; % UPDATE THIS
+
     % Calculate the error in distance
     distanceError = ; % m
 
     % Calculate the change in distance error since last iteration
+    % Use the 'lastDistanceError' variable in your calculation
     deltaDistanceError = ; % m
 
     % Rate of change of error with respect to time
@@ -56,6 +58,10 @@ for k = 1:totalTimeSteps
     steeringAngle = ;
 
     %%
+
+    % Update tracking variables
+    lastDistanceError = distanceError;
+    lastTime = currentTime;
 
     % Send steering angle command
     RC.setSteeringAngle(steeringAngle);
