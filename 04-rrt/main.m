@@ -15,16 +15,16 @@ close all
 load('OccupancyGridSave.mat')
 
 % Use the show() function to plot your map
-show(mapf)
+show(saved_map)
 
 % Use the checkOccupancy() function to check the occupancy at some position
 check_x = 0; % m
 check_y = 0; % m
-val = checkOccupancy(maps, [X Y]); % < 0.5 for empty, > 0.5 for occupied
+val = checkOccupancy(saved_map, [check_x check_y]); % < 0.5 for empty, > 0.5 for occupied
 
 % Use the inflate() function to inflate the obstacles
 inflate_size = 0.5; % m
-inflate(mapf, inflate_size)
+inflate(saved_map, inflate_size)
 
 % Set your start and goal positions
 start_position = [0 0];
