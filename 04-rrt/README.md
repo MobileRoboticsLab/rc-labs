@@ -1,6 +1,6 @@
 # Lab 4 - RRT
 
-![example result](./ExampleResult.mp4)
+![example result](./ExampleResult.gif)
 
 ## Instructions
 
