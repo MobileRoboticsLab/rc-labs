@@ -16,6 +16,7 @@ load('OccupancyGridSave.mat')
 
 % Use the show() function to plot your map
 show(saved_map)
+% You can use axis([xmin xmax ymin ymax]) to zoom in on a specific region
 
 % Use the checkOccupancy() function to check the occupancy at some position
 check_x = 0; % m
@@ -23,7 +24,7 @@ check_y = 0; % m
 val = checkOccupancy(saved_map, [check_x check_y]); % < 0.5 for empty, > 0.5 for occupied
 
 % Use the inflate() function to inflate the obstacles
-inflate_size = 0.5; % m
+inflate_size = 0.1; % m
 inflate(saved_map, inflate_size)
 
 % Set your start and goal positions
