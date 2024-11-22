@@ -21,4 +21,6 @@
 
 ## Example Result
 
-<img src="./ExampleResult.gif" width="500" height="300"/>
+<p align="center">
+<img src="./ExampleResult.gif" width="560" height="420"/>
+</p>
