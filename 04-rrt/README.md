@@ -1,7 +1,5 @@
 # Lab 4 - RRT
 
-![example result](./ExampleResult.gif)
-
 ## Instructions
 
 1. Follow the instructions from [`rc-matlab-lib`](https://github.com/MobileRoboticsLab/rc-matlab-lib) to run a RC car from MATLAB using your keyboard.
@@ -20,3 +18,7 @@
 - `show(saved_map)`: Show the saved map in a figure. You can use `axis(xmin xmax ymin ymax)` to zoom in to a specific region.
 - `val = checkOccupancy(saved_map, [check_x check_y]);`: Check the occupancy of a specific location on the map. Returns 0 for free, 1 for occupied, and -1 for unknown space.
 - `inflate(saved_map, inflate_size)`: Inflate the obstacles on your map by some size. Necessary to prevent the robot from clipping the edges of the obstacles.
+
+## Example Result
+
+<img src="./ExampleResult.gif" width="500" height="300"/>
